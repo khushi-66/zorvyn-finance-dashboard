@@ -1,13 +1,188 @@
-# React + Vite
+# 🚀 Finance Dashboard UI — Interactive Data Visualization Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive **Finance Dashboard** built to visualize financial activity, analyze spending patterns, and manage transactions efficiently.
 
-Currently, two official plugins are available:
+This project was developed as part of a Frontend Developer Internship assessment to demonstrate strong frontend engineering skills, UI/UX thinking, and data-driven design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
+
+🔗 **Live Site:** https://your-username.github.io/zorvyn-finance-dashboard/
+🌐 Deployed using **GitHub Pages**
+
+🎥 **Demo Preview:**
+![Demo](./screenshots/demo.gif)
+
+---
+
+## 🎯 Project Highlights
+
+* 📊 Real-time financial overview with clean UI
+* 🔍 Advanced transaction exploration (search + filter)
+* 👥 Role-based UI simulation (Admin / Viewer)
+* 📈 Insightful analytics & data interpretation
+* 📱 Fully responsive design (mobile + desktop)
+
+---
+
+## 🖼️ Screenshots
+
+### 📊 Dashboard Overview
+
+![Dashboard](./screenshots/dashboard.png)
+
+### 📋 Transactions Table
+
+![Transactions](./screenshots/transactions.png)
+
+### 📈 Insights & Analytics
+
+![Insights](./screenshots/insights.png)
+
+---
+
+## ⚡ Features
+
+### 📊 Dashboard Overview
+
+* Total Balance, Income, Expenses cards
+* 📈 Time-based visualization (balance trends)
+* 🥧 Category-wise expense breakdown
+
+---
+
+### 📋 Transactions Management
+
+* View structured transaction data:
+
+  * Date, Amount, Category, Type
+* 🔍 Smart search functionality
+* 🎯 Dynamic filtering (Income / Expense / Category)
+* 🔽 Sorting (optional enhancement)
+
+---
+
+### 👥 Role-Based UI (Frontend Simulation)
+
+* **Viewer Mode:** Read-only dashboard access
+* **Admin Mode:** Add/Edit transactions enabled
+* 🔄 Seamless role switching (dropdown toggle)
+
+---
+
+### 📈 Insights & Analytics
+
+* Highest spending category detection
+* Monthly expense comparison
+* Data-driven observations using calculated metrics
+
+---
+
+## 🧠 Key Learnings & Concepts
+
+* Component-driven architecture in React
+* Efficient state management using hooks
+* Data transformation and UI synchronization
+* Building scalable and reusable UI components
+* Designing intuitive and user-friendly dashboards
+* Handling edge cases (empty state, no data scenarios)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology             | Purpose            |
+| ---------------------- | ------------------ |
+| ⚛️ React.js            | Frontend Framework |
+| 🎨 Bootstrap           | Styling            |
+| 📊 Recharts / Chart.js | Data Visualization |
+| 🔄 React Router        | Navigation         |
+| 📁 Mock JSON           | Data Handling      |
+
+---
+
+## 📂 Project Architecture
+
+```
+project-root/
+ ├── public/
+ ├── src/
+ │    ├── components/
+ │           ├── Navbar.jsx
+ │           ├── Dashboard.jsx
+ │           ├── Transactions.jsx
+ │           ├── Insights.jsx
+ ├── screenshots/  
+ │     ├── dashboard.png
+ │     ├── transactions.png
+ │     ├── insights.png
+ │     ├── demo.gif
+ ├── package.json
+ ├── README.md
+```
+
+---
+
+## ⚙️ Installation Guide
+
+```bash
+git clone https://github.com/khushi-66/zorvyn-finance-dashboard.git
+cd zorvyn-finance-dashboard
+npm install
+npm start
+```
+
+---
+
+## 🌟 Advanced Enhancements
+
+* 🌙 Dark Mode
+* 💾 LocalStorage persistence
+* 📊 Interactive charts with animations
+* 📤 Data export (CSV/JSON)
+* 🎯 Improved filtering & grouping
+
+---
+
+## 🔗 Source Code
+
+👉 https://github.com/khushi-66/zorvyn-finance-dashboard
+
+---
+
+## 🧪 Testing & Edge Cases
+
+* Handles empty transaction states
+* Validates user interactions in UI
+* Ensures responsive layout across devices
+
+---
+
+## 📝 Recruiter Note
+
+This project reflects my ability to:
+
+* Build clean, scalable frontend architectures
+* Design intuitive user interfaces with real-world usability
+* Handle application state effectively
+* Translate data into meaningful visual insights
+
+I focused on clarity, usability, and maintainable code rather than unnecessary complexity — aligning with real-world frontend development practices.
+
+---
+
+## 👩‍💻 Author
+
+**Khushi Sahu**
+Frontend Developer Intern Candidate
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and feel free to connect!
+
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
