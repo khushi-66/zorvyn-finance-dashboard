@@ -1,8 +1,7 @@
+import transaction from '../data/transaction'
 export default function Dashboard()
 {
-    return (
-
-<div>dashbord</div>
-
-    );
+  return(
+    <h1>dashboard</h1>
+  )  
 }
