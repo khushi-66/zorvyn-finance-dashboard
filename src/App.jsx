@@ -1,121 +1,81 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
+import { Link, Outlet, useLocation } from 'react-router-dom'
+import Footer from './components/Footer'
+import  finance from './assets/finance.jpg'
+import '../src/App.css';
+  export default function App() {
+  const location = useLocation();
+  const ishomepage = location.pathname === "/";
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="d-flex flex-column min-vh-100">
 
-      <div className="ticks"></div>
+      {/* Main Content */}
+      <div className="container-fluid flex-grow-1">
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        {/* Navbar */}
+        <div className="d-flex justify-content-between align-items-center mt-3">
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+          <h5 className="fw-bold text-primary m-0">
+            <i className="bi bi-currency-rupee me-1"></i>
+            Finance Dashboard
+          </h5>
+
+          <div>
+            <Link to="/" className="btn btn-primary me-2">
+              <i className="bi bi-house-fill me-2"></i>
+              Home
+            </Link>
+            <Link to="/dashboard" className="btn btn-primary me-2">
+              <i className="bi bi-speedometer2 me-2"></i>
+              Dashboard
+            </Link>
+
+
+            <Link to="/transaction" className="btn btn-success me-2">
+              <i className="bi bi-list-ul me-2"></i>
+              Transactions
+            </Link>
+
+            <Link to="/insights" className="btn btn-dark">
+              <i className="bi bi-graph-up-arrow me-2"></i>
+              Insights
+            </Link>
+          </div>
+        </div>
+
+        {/* 🔥 Homepage Hero */}
+        {ishomepage && (
+          <div className="text-center mt-5">
+            <h2 className="fw-bold">Welcome to Finance Dashboard</h2>
+            <p className="text-muted">Track. Analyze. Grow your finances.</p>
+
+            <div className="mt-4">
+    <img
+      src={finance}
+      className="img-fluid rounded shadow"
+      style={{ maxHeight: "300px" }}
+    />
+  </div>
+
+  {/* Button */}
+  <div className="mt-4">
+    <Link to="/dashboard" className="btn btn-primary px-4 fs-4">
+      Get Started
+      <i className="bi bi-arrow-right ms-2 fs-4"></i>
+    </Link>
+  </div>
+          </div>
+        )}
+
+        {/* 🔥 Outlet MUST be here */}
+        <Outlet />
+
+      </div>
+
+      {/* Footer */}
+      <Footer />
+
+    </div>
+  );
 }
-
-export default App
