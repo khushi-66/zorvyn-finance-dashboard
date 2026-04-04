@@ -34,7 +34,7 @@ import '../src/App.css';
 
             <Link to="/transaction" className="btn btn-success me-2">
               <i className="bi bi-list-ul me-2"></i>
-              Transactions
+             All Transactions
             </Link>
 
             <Link to="/insights" className="btn btn-dark">

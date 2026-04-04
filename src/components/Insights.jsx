@@ -2,7 +2,14 @@ export default function Insights()
 {
     return (
 <>
-<div>insights</div>
+<div>insights
+    Ye tumhe baaki sabse alag banayega
+
+✔ Show:
+🏆 Highest spending category
+📊 Income vs Expense message
+💰 Savings
+</div>
 </>
     );
 }
