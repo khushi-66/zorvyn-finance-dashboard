@@ -5,8 +5,6 @@ import Linechart from './Linechart';
 import Piechart from './Piechart';
 export default function Dashboard()
 {
-  
-
   const[data,setData]=useState(transaction);
 const recentTransaction=[...data].slice(-5).reverse();
   
