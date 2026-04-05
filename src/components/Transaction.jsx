@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import transaction from "../data/transaction"
 import { Link } from "react-router-dom";
 import transactions from "../data/transaction";
+import { CSVLink } from "react-csv";
 export default function Transaction()
 {
     const[search,setSearch]=useState('');
@@ -128,7 +129,7 @@ return (
           <i className="bi bi-clock-history me-2"></i>
           Transaction History
         </div>
-
+   
         {role === "admin" && selectedIds.length > 0 && (
   <button
     className="btn btn-danger mb-2"
@@ -138,11 +139,27 @@ return (
   </button>
 )}
      
-     {role==='admin' && (
+     {role==='admin' && (<>
       <button className="btn btn-success mb-3" onClick={()=>setShowForm(!showform)}>
         <i className="bi bi-plus-lg me-1"></i>
     Add Transaction
   </button>
+   
+    <CSVLink
+        data={data}
+        headers={[
+          { label: "ID", key: "id" },
+          { label: "Date", key: "date" },
+          { label: "Amount", key: "amount" },
+          { label: "Category", key: "category" },
+          { label: "Type", key: "type" },
+        ]}
+        filename="transactions.csv"
+        className="btn btn-success mb-3 ms-2"
+      >
+        📥 Download CSV
+      </CSVLink>
+</>
 )}
 
 
