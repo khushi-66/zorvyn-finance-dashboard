@@ -4,122 +4,155 @@ A modern, responsive, and interactive **Finance Dashboard** built to visualize f
 
 This project was developed as part of a Frontend Developer Internship assessment to demonstrate strong frontend engineering skills, UI/UX thinking, and data-driven design.
 
+🔗 Live Demo: https://finance-khushi.vercel.app
+
+📂 Source Code: https://github.com/khushi-66/finance-management-system
+
+🌐 Deployment: Deployed on Vercel
+
+🎥 [![Watch Demo](./screenshots/thumbnail.png)] [https://www.youtube.com/watch?v=YOUR_VIDEO_LINK](https://youtu.be/HC_lWV7HnTg)
+
+
 ---
 
-## 🚀 Live Demo
+## 🎥 Demo Preview
 
-🔗 **Live Site:** https://your-username.github.io/zorvyn-finance-dashboard/
-🌐 Deployed using **Versel**
-
-🎥 **Demo Preview:**
 ![Demo](./screenshots/demo.gif)
 
 ---
 
-## 🎯 Project Highlights
+## 📌 Overview
 
-* 📊 Real-time financial overview with clean UI
-* 🔍 Advanced transaction exploration (search + filter)
-* 👥 Role-based UI simulation (Admin / Viewer)
-* 📈 Insightful analytics & data interpretation
-* 📱 Fully responsive design (mobile + desktop)
+A modern and fully responsive **Finance Management System** built using React that helps users efficiently manage their income and expenses.
+
+This project demonstrates real-world frontend development skills including **state management, data visualization, filtering, and role-based UI handling**.
+
+---
+
+## ✨ Key Highlights
+
+* 📊 Clean and modern dashboard UI
+* 📱 Fully responsive (mobile + desktop)
+* ⚡ Real-time data updates
+* 👥 Role-based UI (Admin / Viewer)
+* 📈 Data-driven insights and analytics
+* 📤 Export transactions as CSV
+
+---
+
+## ⚙️ Features
+
+### 📊 Dashboard
+
+* 💰 Total Balance calculation
+* 📈 Total Income & Expense tracking
+* 📉 Dynamic financial summary cards
+* 📊 Monthly Income vs Expense Line Chart
+* 🥧 Category-wise Expense Pie Chart
+
+---
+
+### 📋 Transaction Management
+
+* ➕ Add new transactions
+* ✏️ Edit existing transactions
+* 🗑️ Delete transactions
+* 🗑️ Multiple delete (bulk selection)
+* 📂 Data persisted using LocalStorage
+
+---
+
+### 🔍 Search, Filter & Sort
+
+* 🔎 Smart search (category, type, amount)
+* 🎯 Filter by:
+
+  * Income / Expense
+  * Category
+* 🔽 Sort transactions:
+
+  * Amount Low → High
+  * Amount High → Low
+
+---
+
+### 👥 Role-Based Access (Frontend Simulation)
+
+* 👀 Viewer Mode:
+
+  * Read-only access
+* 🛠️ Admin Mode:
+
+  * Full control (Add/Edit/Delete)
+* 🔄 Easy role switching
+
+---
+
+### 📈 Insights & Analytics
+
+* 🏆 Highest spending category detection
+* 💸 Expense vs Income comparison
+* 💰 Savings calculation
+* 📊 Data-driven financial insights
+
+---
+
+### 📤 Export Feature
+
+* 📥 Download transactions as CSV file
+* Useful for reporting and external analysis
 
 ---
 
 ## 🖼️ Screenshots
 
-### 📊 Home Page
-
-![Dashboard](./screenshots/home.jpeg)
-
-
-### 📊 Dashboard Overview
+### 📊 Dashboard
 
 ![Dashboard](./screenshots/dashboard.jpeg)
 
+### 📋 Transactions
 
-### 📋 Transactions Table
+![Transactions](./screenshots/add-transaction.jpeg)
 
-###  Add Transaction
+### ✏️ Edit Transaction
 
-![Add Transactions](./screenshots/add-transaction.jpeg)
+![Edit](./screenshots/edit-transaction.jpeg)
 
-### Edit Transaction
-
-![Edit Transaction](./screenshots/edit-transaction.jpeg)
-
-
-### 📈 Downloaded CSV File
-
-![CSV File](./screenshots/csv-file.png)
-
-### 📈 Insights & Analytics
+### 📈 Insights
 
 ![Insights](./screenshots/insights.jpeg)
 
----
+### 📄 CSV Export
 
-## ⚡ Features
-
-### 📊 Dashboard Overview
-
-* Total Balance, Income, Expenses cards
-* 📈 Time-based visualization (balance trends)
-* 🥧 Category-wise expense breakdown
-
----
-
-### 📋 Transactions Management
-
-* View structured transaction data:
-
-  * Date, Amount, Category, Type
-* 🔍 Smart search functionality
-* 🎯 Dynamic filtering (Income / Expense / Category)
-* 🔽 Sorting (Amount)
-
----
-
-### 👥 Role-Based UI (Frontend Simulation)
-
-* **Viewer Mode:** Read-only dashboard access
-* **Admin Mode:** Add/Edit/Delete/Read transactions enabled
-* 🔄 Seamless role switching (dropdown toggle)
-
----
-
-### 📈 Insights & Analytics
-
-* Highest spending category detection
-* Monthly expense comparison
-* Data-driven observations using calculated metrics
-
----
-
-## 🧠 Key Learnings & Concepts
-
-* Component-driven architecture in React
-* Efficient state management using hooks
-* Data transformation and UI synchronization
-* Building scalable and reusable UI components
-* Designing intuitive and user-friendly dashboards
-* Handling edge cases (empty state, no data scenarios)
+![CSV](./screenshots/csv-file.png)
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology             | Purpose            |
-| ---------------------- | ------------------ |
-| ⚛️ React.js            | Frontend Framework |
-| 🎨 Bootstrap           | Styling            |
-| 📊 Recharts / Chart.js | Data Visualization |
-| 🔄 React Router        | Navigation         |
-| 📁 Mock JSON           | Data Handling      |
+| Technology      | Purpose            |
+| --------------- | ------------------ |
+| ⚛️ React.js     | Frontend Framework |
+| 🎨 Bootstrap    | UI Styling         |
+| 📊 Recharts     | Data Visualization |
+| 🔄 React Router | Routing            |
+| 💾 LocalStorage | Data Persistence   |
 
 ---
 
-## 📂 Project Architecture
+## 🧠 Key Learnings
+
+* Component-based architecture in React
+* Efficient state management using Hooks
+* Data filtering, sorting & transformation
+* Building reusable UI components
+* Handling real-world UI/UX scenarios
+* Implementing role-based UI logic
+* Working with charts and data visualization
+
+---
+
+## 📂 Project Structure
 
 ```
 project-root/
@@ -127,87 +160,71 @@ project-root/
  ├── src/
  │    ├── components/
  │           ├── Dashboard.jsx
- │           ├── Footer.jsx
- │           ├── insights.jsx
+ │           ├── Transaction.jsx
+ │           ├── Insights.jsx
  │           ├── Linechart.jsx
  │           ├── Piechart.jsx
- │           ├── Transaction.jsx
- ├── screenshots/  
- │     ├── home.jpeg
- │     ├── dashboard.jpeg
- │     ├── add-transaction.jpeg
- │     ├── edit-transaction.jpeg
- │     ├── insights.jpeg
- │     ├── csv-file.png
- │     ├── demo.gif
+ │           ├── Footer.jsx
+ ├── screenshots/
  ├── package.json
  ├── README.md
 ```
 
 ---
 
-## ⚙️ Installation Guide
+## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/khushi-66/zorvyn-finance-dashboard.git
-cd zorvyn-finance-dashboard
+git clone https://github.com/khushi-66/khushi-66/finance-management-system.git
+cd finance-management-system
 npm install
-npm start
+npm run dev
 ```
-
----
-
-## 🌟 Advanced Enhancements
-
-
-* 💾 LocalStorage persistence
-* 📊 Interactive charts with animations
-* 📤 Data export (CSV/JSON)
-* 🎯 Improved filtering & grouping
-
----
-
-## 🔗 Source Code
-
-👉 https://github.com/khushi-66/zorvyn-finance-dashboard
 
 ---
 
 ## 🧪 Testing & Edge Cases
 
-* Handles empty transaction states
-* Validates user interactions in UI
-* Ensures responsive layout across devices
+* Handles empty transaction state
+* Prevents UI crashes on no data
+* Responsive across all devices
+* Works with dynamic data updates
+
+---
+
+## 🌟 Advanced Features
+
+* 💾 LocalStorage persistence
+* 📊 Interactive charts
+* 📤 CSV export
+* 🔍 Advanced filtering & sorting
+* 👥 Role-based UI simulation
 
 ---
 
 ## 📝 Recruiter Note
 
-This project reflects my ability to:
+This project demonstrates my ability to:
 
-* Build clean, scalable frontend architectures
-* Design intuitive user interfaces with real-world usability
-* Handle application state effectively
-* Translate data into meaningful visual insights
+* Build scalable and maintainable frontend applications
+* Design clean and intuitive user interfaces
+* Implement real-world features like CRUD, filtering, and analytics
+* Work with data visualization and insights
+* Focus on performance, usability, and clean code practices
 
-I focused on clarity, usability, and maintainable code rather than unnecessary complexity — aligning with real-world frontend development practices.
+I have focused on **clarity, usability, and real-world relevance**, which are essential in modern frontend development.
 
 ---
 
 ## 👩‍💻 Author
 
 **Khushi Sahu**
-Frontend Developer Intern Candidate
+Frontend Developer (Fresher)
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Give it a ⭐ on GitHub and feel free to connect!
-
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you like this project, give it a ⭐ on GitHub
+and feel free to connect 🚀
+pt-eslint.io) in your project.
