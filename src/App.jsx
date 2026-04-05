@@ -10,18 +10,19 @@ import '../src/App.css';
   return (
     <div className="d-flex flex-column min-vh-100">
 
-      {/* Main Content */}
+      
       <div className="container-fluid flex-grow-1">
 
-        {/* Navbar */}
-        <div className="d-flex justify-content-between align-items-center mt-3">
+        
+        <div className="d-flex justify-content-between align-items-center mt-3 flex-wrap">
 
           <h5 className="fw-bold text-primary m-0">
             <i className="bi bi-currency-rupee me-1"></i>
             Finance Dashboard
           </h5>
 
-          <div>
+           <div className="d-flex flex-wrap justify-content-center justify-content-md-end gap-2">
+
             <Link to="/" className="btn btn-primary me-2">
               <i className="bi bi-house-fill me-2"></i>
               Home
@@ -58,7 +59,7 @@ import '../src/App.css';
     />
   </div>
 
-  {/* Button */}
+ 
   <div className="mt-4">
     <Link to="/dashboard" className="btn btn-primary px-4 fs-4">
       Get Started
@@ -68,12 +69,12 @@ import '../src/App.css';
           </div>
         )}
 
-        {/* 🔥 Outlet MUST be here */}
+        
         <Outlet />
 
       </div>
 
-      {/* Footer */}
+     
       <Footer />
 
     </div>

@@ -1,18 +1,21 @@
-import { Legend, Pie, PieChart, Tooltip } from "recharts";
+import { PieChart, Pie, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
-export default function Piechart({data})
-{
-    return(
-       <PieChart  width={500} height={400}>
-        <Pie
-          data={data}
-          dataKey="value"
-          nameKey="name"
-          outerRadius={150}
-        />
-        <Tooltip/>
-        <Legend/>
-        
-       </PieChart>
-    );
+export default function Piechart({ data }) {
+  return (
+    <div style={{ width: "100%", height: "300px" }}>
+      <ResponsiveContainer>
+        <PieChart>
+          <Pie
+            data={data}
+            dataKey="value"
+            nameKey="name"
+            outerRadius="80%"
+            label
+          />
+          <Tooltip />
+          <Legend />
+        </PieChart>
+      </ResponsiveContainer>
+    </div>
+  );
 }

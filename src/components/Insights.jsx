@@ -39,42 +39,49 @@ console.group(maxAmount);
 console.group(maxCategory);
 console.log(  "categoryMap  ",categoryMap);
     return (
-         <div className="container mt-4" >
-               <div className="row mt-5">
-        <div className="col-md-4 mt-5" >
-          <div className="mx-4 mt-5 p-4 text-center card shadow"style={{height:"200px"}}>
-            <h5 className="mt-5">
-    <i className="bi bi-piggy-bank me-2 text-success"></i>
-    Savings
-  </h5>
-  <p className="text-success mt-2">₹ {saving}</p>
-          </div>
+         
+  <div className="container mt-4">
+
+    <div className="row g-3 mt-3">
+
+      
+      <div className="col-12 col-md-4">
+        <div className="card shadow p-4 text-center h-100">
+          <h5>
+            <i className="bi bi-piggy-bank me-2 text-success"></i>
+            Savings
+          </h5>
+          <p className="text-success mt-2 fw-bold fs-5">
+            ₹ {saving}
+          </p>
         </div>
+      </div>
 
-        <div className="col-md-4 mt-5" >
-         <div className="mx-4 mt-5 p-4 text-center card shadow"style={{height:"200px"}}>
-          <h5 className="mt-5">
-    <i className="bi bi-bar-chart-line me-2 text-primary"></i>
-    Financial Status
-  </h5>
-  <p className="mt-2">{message}</p>
-          </div>
+      
+      <div className="col-12 col-md-4">
+        <div className="card shadow p-4 text-center h-100">
+          <h5>
+            <i className="bi bi-bar-chart-line me-2 text-primary"></i>
+            Financial Status
+          </h5>
+          <p className="mt-2">{message}</p>
         </div>
+      </div>
 
-          <div className="col-md-4 mt-5">
-           <div className="mx-4 mt-5 p-4 text-center card shadow" style={{height:"200px"}}>
-<h5 className="mt-5">
-    <i className="bi bi-trophy me-2 text-warning"></i>
-    Highest Spending
-  </h5 >
-  <p className="mt-2">{maxCategory} (₹ {maxAmount})</p>
-          </div>
-          </div>
+      
+      <div className="col-12 col-md-4">
+        <div className="card shadow p-4 text-center h-100">
+          <h5>
+            <i className="bi bi-trophy me-2 text-warning"></i>
+            Highest Spending
+          </h5>
+          <p className="mt-2">
+            {maxCategory} (₹ {maxAmount})
+          </p>
+        </div>
+      </div>
 
-               </div>
-            </div>
-    );
-}
+    </div>
 
-
-
+  </div>
+);}
