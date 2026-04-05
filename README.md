@@ -35,14 +35,19 @@ This project was developed as part of a Frontend Developer Internship assessment
 
 ### 📊 Dashboard Overview
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.jpeg)
+
 
 ### 📋 Transactions Table
 
+###  Add Transaction
+
 ![Add Transactions](./screenshots/add-transaction.jpeg)
 
+### Edit Transaction
 
 ![Edit Transaction](./screenshots/edit-transaction.jpeg)
+
 
 ### 📈 Downloaded CSV File
 
