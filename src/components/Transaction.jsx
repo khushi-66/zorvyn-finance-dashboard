@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import transaction from "../data/transaction"
-import { Link } from "react-router-dom";
-import transactions from "../data/transaction";
 import { CSVLink } from "react-csv";
 export default function Transaction()
 {

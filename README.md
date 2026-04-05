@@ -9,7 +9,7 @@ This project was developed as part of a Frontend Developer Internship assessment
 ## 🚀 Live Demo
 
 🔗 **Live Site:** https://your-username.github.io/zorvyn-finance-dashboard/
-🌐 Deployed using **GitHub Pages**
+🌐 Deployed using **Versel**
 
 🎥 **Demo Preview:**
 ![Demo](./screenshots/demo.gif)
@@ -28,17 +28,29 @@ This project was developed as part of a Frontend Developer Internship assessment
 
 ## 🖼️ Screenshots
 
+### 📊 Home Page
+
+![Dashboard](./screenshots/home.jpeg)
+
+
 ### 📊 Dashboard Overview
 
 ![Dashboard](./screenshots/dashboard.png)
 
 ### 📋 Transactions Table
 
-![Transactions](./screenshots/transactions.png)
+![Add Transactions](./screenshots/add-transaction.jpeg)
+
+
+![Edit Transaction](./screenshots/edit-transaction.jpeg)
+
+### 📈 Downloaded CSV File
+
+![CSV File](./screenshots/csv-file.png)
 
 ### 📈 Insights & Analytics
 
-![Insights](./screenshots/insights.png)
+![Insights](./screenshots/insights.jpeg)
 
 ---
 
@@ -59,14 +71,14 @@ This project was developed as part of a Frontend Developer Internship assessment
   * Date, Amount, Category, Type
 * 🔍 Smart search functionality
 * 🎯 Dynamic filtering (Income / Expense / Category)
-* 🔽 Sorting (optional enhancement)
+* 🔽 Sorting (Amount)
 
 ---
 
 ### 👥 Role-Based UI (Frontend Simulation)
 
 * **Viewer Mode:** Read-only dashboard access
-* **Admin Mode:** Add/Edit transactions enabled
+* **Admin Mode:** Add/Edit/Delete/Read transactions enabled
 * 🔄 Seamless role switching (dropdown toggle)
 
 ---
@@ -109,14 +121,19 @@ project-root/
  ├── public/
  ├── src/
  │    ├── components/
- │           ├── Navbar.jsx
  │           ├── Dashboard.jsx
- │           ├── Transactions.jsx
- │           ├── Insights.jsx
+ │           ├── Footer.jsx
+ │           ├── insights.jsx
+ │           ├── Linechart.jsx
+ │           ├── Piechart.jsx
+ │           ├── Transaction.jsx
  ├── screenshots/  
- │     ├── dashboard.png
- │     ├── transactions.png
- │     ├── insights.png
+ │     ├── home.jpeg
+ │     ├── dashboard.jpeg
+ │     ├── add-transaction.jpeg
+ │     ├── edit-transaction.jpeg
+ │     ├── insights.jpeg
+ │     ├── csv-file.png
  │     ├── demo.gif
  ├── package.json
  ├── README.md
@@ -137,7 +154,7 @@ npm start
 
 ## 🌟 Advanced Enhancements
 
-* 🌙 Dark Mode
+
 * 💾 LocalStorage persistence
 * 📊 Interactive charts with animations
 * 📤 Data export (CSV/JSON)
