@@ -11,7 +11,7 @@ This project was developed as part of a Frontend Developer Internship assessment
 🌐 Deployment: Deployed on Vercel
 
 <p align="center">
-  <a href="[https://www.youtube.com/watch?v=YOUR_VIDEO_LINK](https://youtu.be/HC_lWV7HnTg)">
+  <a href="https://youtu.be/HC_lWV7HnTg">
     <img src="./screenshots/thumbnail.png" width="800"/>
   </a>
 </p>
