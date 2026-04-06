@@ -1,5 +1,7 @@
 # 🚀 Finance Dashboard UI — Interactive Data Visualization Platform
 
+![Finance Dashboard](./screenshots/thumbnail.png)
+
 A modern, responsive, and interactive **Finance Dashboard** built to visualize financial activity, analyze spending patterns, and manage transactions efficiently.
 
 This project was developed as part of a Frontend Developer Internship assessment to demonstrate strong frontend engineering skills, UI/UX thinking, and data-driven design.
@@ -10,8 +12,11 @@ This project was developed as part of a Frontend Developer Internship assessment
 
 🌐 Deployment: Deployed on Vercel
 
-🎥 [![Watch Demo](./screenshots/thumbnail.png)] [https://www.youtube.com/watch?v=YOUR_VIDEO_LINK](https://youtu.be/HC_lWV7HnTg)
-
+<p align="center">
+  <a href="https://youtu.be/HC_lWV7HnTg">
+    <img src="./screenshots/thumbnail.png" width="800"/>
+  </a>
+</p>
 
 ---
 
