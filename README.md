@@ -12,11 +12,7 @@ This project was developed as part of a Frontend Developer Internship assessment
 
 🌐 Deployment: Deployed on Vercel
 
-<p align="center">
-  <a href="https://youtu.be/HC_lWV7HnTg">
-    <img src="./screenshots/thumbnail.png" width="800"/>
-  </a>
-</p>
+Youtube Demo: https://youtu.be/HC_lWV7HnTg
 
 ---
 
