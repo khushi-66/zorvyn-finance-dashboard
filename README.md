@@ -131,6 +131,10 @@ This project demonstrates real-world frontend development skills including **sta
 
 ![CSV](./screenshots/csv-file.png)
 
+### Mobile View
+
+![Mobile View](./screenshots/mobile.jpeg)
+
 ---
 
 ## 🛠️ Tech Stack
